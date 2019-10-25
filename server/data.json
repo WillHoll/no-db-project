@@ -2,11 +2,33 @@
     {
         "id": "0",
         "title": "Snow Boarding in the Alps",
-        "url": "",
-        "price": "",
-        "duration": ""
+        "image": "https://usatunofficial.files.wordpress.com/2019/04/pexels-photo-1878052.jpeg?w=640&h=427",
+        "desc": "Have some fun snowboarding somewhere even more expensive than anywhere else",
+        "price": "30000",
+        "duration": "1"
     },
     {
-        
+        "id": "1",
+        "title": "Sky Diving",
+        "image": "https://skydivemonroe.com/wp-content/uploads/have-what-it-takes-to-skydive_mini.jpg",
+        "desc": "You get on a plane and it drops you. No need to think hard about it.",
+        "price": "1000",
+        "duration": "1"
+    },
+    {
+        "id": "2",
+        "title": "playing video games with some loner",
+        "image": "https://www.sciencealert.com/images/articles/processed/GamingBenefits_web_600.jpg",
+        "desc": "What!? You don't have that one friend who just works and plays games? I've got you covered.",
+        "price": "40",
+        "duration": "5"
+    },
+    {
+        "id": "3",
+        "title": "Wood Working class",
+        "image": "https://www.homeadvisor.com/r/wp-content/uploads/2016/01/Dollarphotoclub_74643266-2.jpg",
+        "desc": "For the people who want to work that wood, but don't have the space for some really expensive equipment",
+        "price": "200",
+        "duration": "24"
     }
 ]
