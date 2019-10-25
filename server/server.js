@@ -1,9 +1,11 @@
 require('dotenv').config();
 const express = require('express');
+const {SERVER_PORT} = process.env;
+const ctrl = require('./controllers/controller')
+
 const app = express();
 app.use(express.json());
-const {SERVER_PORT} = process.env;
 
-
+app.get('/api/adventures', ctrl.getAdventures)
 
 app.listening(SERVER_PORT, () => console.log(`${SERVER_PORT} bottles of beer on the wall`))

@@ -7,7 +7,7 @@ class IdeaList extends Component {
         this.state = {
             adventureList: [],
             duration: '',
-            price: '',
+            price: null,
         }
     }
     
@@ -18,19 +18,56 @@ class IdeaList extends Component {
                 this.setState({
                     adventureList: res.data
                 });
+            })
+            .catch(err => {
+                console.log(err);
             });
     }
 
-    adventurerFilter(duration, price) {
+    adventureFilter(duration, price) {
         if (duration && price) {
             axios
-                .get(`/api/adventures?q={"duration": "${duration}", "price": {"${price}"}`)
+                .get(`/api/adventures?duration=${duration}&price=${price}`)
                 .then((res) => {
                     this.setState({
                         adventureList: res.data
                     })
                 })
+                .catch(err => {
+                    console.log(err);
+                });
+        } else if (duration && !price) {
+            axios
+                .get(`/api/adventures?duration=${duration}`)
+                .then((res) => {
+                    this.setState({
+                        adventureList: res.data
+                    })
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+        } else if (!duration && price) {
+            axios
+                .get(`/api/adventures?price=${price}`)
+                .then((res) => {
+                    this.setState({
+                        adventureList: res.data
+                    })
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+        } else {
+            this.componentDidMount()
+            return(
+                alert("enter valid search inputs")
+            )
         }
+        this.setState({
+            duration: '',
+            price: null
+        })
     }
 
 
@@ -41,7 +78,7 @@ class IdeaList extends Component {
                 <div className="search-inputs">
                     <input placeholder='Duration' onChange={(e) => this.setState({duration: e.target.value})}/>
                     <input placeholder='Max price' onChange={(e) => this.setState({price: e.target.value})}/>
-                    <button onClick={() => this.adventurerFilter(duration, price)}>Search</button>
+                    <button onClick={() => this.adventureFilter(duration, price)}>Search</button>
                 </div>
             </div>
         );
