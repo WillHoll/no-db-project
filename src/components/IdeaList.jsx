@@ -24,7 +24,7 @@ class IdeaList extends Component {
             });
     }
 
-    adventureFilter(duration, price) {
+    adventureFilter(duration, price) { //send proper url based on query/queries
         if (duration && price) {
             axios
                 .get(`/api/adventures?duration=${duration}&price=${price}`)
