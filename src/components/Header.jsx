@@ -6,8 +6,10 @@ export default function Header() {
     return (
         <header>
             <h2>Bubket Lizzzzzst</h2>
-            <Link to="/">My Bucket Lizzt</Link>
-            <Link to="/ideas">Ideas for the Bubket lizzzzszst</Link>
+            <nav>
+                <Link to="/">My Bucket Lizzt</Link>
+                <Link to="/ideas">Ideas for the Bubket lizzzzszst</Link>
+            </nav>
         </header>
     );
 }
