@@ -20,8 +20,14 @@ class MyList extends Component {
             })
     }
 
-    deleteEntry(adventure) {
-        
+    deleteEntry(id) {
+        axios
+            .delete(`/api/mylist/${id}`)
+            .then((res) => {
+                this.setState({
+                    myAdventures: res.data
+                })
+            })
     }
 
 
@@ -30,12 +36,14 @@ class MyList extends Component {
         const adventureDis = myAdventures.map(adventure => (
             <div key={adventure.personalId} className="container">
                 <ListView adventureObj={adventure}/>
-                <button onClick={this.deleteEntry(adventure)}>Delete</button>
+                <button onClick={this.deleteEntry(adventure.personalId)}>Delete</button>
             </div>
         ))
         return (
             <div className='user-list'>
-                Deez be mAAAiii adventures, SCRUB!
+                <h2>
+                    Deez be mAAAiii adventures, SCRUB!
+                </h2>
                 {adventureDis}
             </div>
         );

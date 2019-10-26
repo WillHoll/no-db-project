@@ -13,6 +13,9 @@ module.exports = {
         res.status(200).send(myAdventures)
     },
     removeAdventure: (req, res) => {
-        
+        const {id} = req.params
+        const index = myAdventures.findIndex(adventure => adventure.personalId === +id)
+        myAdventures.splice(index, 1) 
+        res.status(200).send(myAdventures)
     }
 }
