@@ -1,5 +1,5 @@
 const adventures = require('../data.json');
-let id = 3;
+let id = 4;
 
 module.exports = {
     makeAdventure: (req, res) => {

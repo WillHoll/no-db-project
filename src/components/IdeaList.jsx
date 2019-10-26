@@ -64,7 +64,7 @@ class IdeaList extends Component {
             this.componentDidMount()
         }
         this.setState({
-            duration: '',
+            duration: null,
             price: null
         })
     }

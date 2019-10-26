@@ -17,4 +17,6 @@ app.post('/api/mylist', myCtrl.addAdventure)
 
 app.delete('/api/mylist/:id', myCtrl.removeAdventure)
 
+app.put('/api/mylist/:id', myCtrl.editAdventure)
+
 app.listen(SERVER_PORT, () => console.log(`${SERVER_PORT} bottles of beer on the wall`))
