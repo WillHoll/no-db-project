@@ -36,7 +36,7 @@ class MyList extends Component {
         const adventureDis = myAdventures.map(adventure => (
             <div key={adventure.personalId} className="container">
                 <ListView adventureObj={adventure}/>
-                <button onClick={this.deleteEntry(adventure.personalId)}>Delete</button>
+                <button onClick={() => this.deleteEntry(adventure.personalId)}>Delete</button>
             </div>
         ))
         return (
