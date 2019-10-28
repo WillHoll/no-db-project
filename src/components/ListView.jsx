@@ -11,8 +11,8 @@ const ListView = (props) => {
             </div>
             <div className='desc'>{desc}</div>
             <div className="info">
-                <div>${price}</div>
                 <div>{duration} Day(s)</div>
+                <div>${price}</div>
             </div>
         </div>
     );
