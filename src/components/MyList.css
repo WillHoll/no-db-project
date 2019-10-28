@@ -1,0 +1,21 @@
+.user-list{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.user-list h2 {
+    font-size: 1.7rem;
+    margin: 5px;
+}
+
+.stupid-div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.edit {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 50vw;
+}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import ListView from './ListView';
 import ListEditor from './ListEditor';
+import './MyList.css'
 
 class MyList extends Component {
     constructor(props) {
@@ -62,9 +63,8 @@ class MyList extends Component {
                             <button onClick={() => this.deleteEntry(adventure.personalId)}>Delete</button>
                         </div>
                         :
-                        <div className="stupid-div">
+                        <div className="edit">
                             <ListEditor updateFn={this.update} editAdventure={adventure} />
-                            <button onClick={() => this.editToggle(edit)}>Cancle</button>
                         </div>
                 }
             </div>
@@ -74,7 +74,11 @@ class MyList extends Component {
                 <h2>
                     Deez be mAAAiii adventures, SCRUB!
                 </h2>
+                {!edit ?
                 <button onClick={() => this.editToggle(edit)}>Edit</button>
+                :
+                <button onClick={() => this.editToggle(edit)}>Cancle</button>
+            }
                 {adventureDis}
             </article>
         );

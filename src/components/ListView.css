@@ -1,0 +1,35 @@
+.list-view {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.list-view h3 {
+    font-size: 1.8rem;
+    margin: 0 0 5px 0;
+}
+
+.image-handler {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+img {
+    height: 250px;
+    width: auto;
+}
+.desc{
+    width: 70%;
+    overflow-wrap: break-word;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid black;
+    font-size: 1.2rem;
+
+}
+.info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 3rem;
+}

@@ -1,0 +1,29 @@
+.add-to-list {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.add-to-list h2 {
+    font-size: 1.7rem;
+    margin: 20px;
+}
+.add-to-list .input-holder {
+    padding: 50px;
+    box-shadow: 2px 5px 10px;
+    height: 500px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.add-to-list .input-holder div {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.add-to-list .wide-input {
+    width: 100%;
+}
+.add-to-list .button-holder {
+    margin-top: 10px;
+}

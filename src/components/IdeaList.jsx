@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import ListView from './ListView';
+import './IdeaList.css'
 
 
 class IdeaList extends Component {
@@ -85,7 +86,7 @@ class IdeaList extends Component {
         const adventureDis = adventureList.map(adventure => (
             <div key={adventure.id} className="container">
                 <ListView  adventureObj={adventure}/>
-                <button  onClick={() => this.adventureTaker(adventure)}>Add to My List</button>
+                <button  className='add-to-my-list-button' onClick={() => this.adventureTaker(adventure)}>Add to My List</button>
             </div>
         ))
         return (

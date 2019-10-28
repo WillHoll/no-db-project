@@ -1,0 +1,30 @@
+.list-editor {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+}
+.list-editor .input-holder {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+}
+.list-editor .image-title{
+    margin-top: 30px;
+} 
+.list-editor .image-input{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.list-editor .description-input {
+    width: 100%;
+    overflow-wrap: break-word;
+    margin-bottom: 30px;
+}
+.list-editor .info-container {
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+
+}

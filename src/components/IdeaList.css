@@ -1,0 +1,35 @@
+.idea-list {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.idea-list h2 {
+    margin: 20px 10px 20px 10px;
+}
+.search-inputs {
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+    background: rgb(247, 246, 246);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px;
+}
+button {
+    margin: 0, 40px;
+    height: 25px;
+    border: 3px outset rgb(252, 71, 0);
+    border-radius: 3px;
+}
+.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 25px;
+    margin: 30px;
+    box-shadow: 2px 3px 5px;
+    border-radius: 20px;
+}
+.add-to-my-list-button {
+    width: 120px;
+}
