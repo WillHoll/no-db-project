@@ -8,6 +8,7 @@
     margin: 20px;
 }
 .add-to-list .input-holder {
+    background: white;
     padding: 50px;
     box-shadow: 2px 5px 10px;
     height: 500px;
