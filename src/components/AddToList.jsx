@@ -53,9 +53,9 @@ class AddToList extends Component {
                     <p>Add some kind of description. You don't want people guessing</p>
                     <input onChange={(e) => this.setState({ desc: e.target.value })} />
                     <p>How much money does it cost?/How much you wanna get?</p>
-                    <input onChange={(e) => this.setState({ price: e.target.value })} />
+                    <input type="number" onChange={(e) => this.setState({ price: e.target.value })} />
                     <p>How many days will this activity last?</p>
-                    <input onChange={(e) => this.setState({ duration: e.target.value })} />
+                    <input type="number" onChange={(e) => this.setState({ duration: e.target.value })} />
                 </div>
                 <div className="button-holder">
                     <button onClick={() => this.personal(this.state)}>Add as Personal Activity</button>

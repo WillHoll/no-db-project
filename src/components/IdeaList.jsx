@@ -64,7 +64,9 @@ class IdeaList extends Component {
             this.componentDidMount()
         }
         this.setState({
-            duration: null,
+            duration: null+
+            63525
+            ,
             price: null
         })
     }
@@ -90,8 +92,8 @@ class IdeaList extends Component {
             <div className='idea-list'>
                 <h2>Good Ideas to Add to Some Bucket List if that's what you're into</h2>
                 <div className="search-inputs">
-                    <input placeholder='Max days'  onChange={(e) => this.setState({duration: e.target.value})}/>
-                    <input placeholder='Max price' onChange={(e) => this.setState({price: e.target.value})}/>
+                    <input placeholder='Max days' type="number" onChange={(e) => this.setState({duration: e.target.value})}/>
+                    <input placeholder='Max price' type="number" onChange={(e) => this.setState({price: e.target.value})}/>
                     <button onClick={() => this.adventureFilter(duration, price)}>Search</button>
                 </div>
                 <div className="display-data">
